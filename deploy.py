@@ -59,7 +59,7 @@ with features:
 
 with modeltraining:
     st.header('Model Predictor')
-    st.markdown('Here we can test the model to see how it performs. Please choose from the list of images down below, either NORMAL or PNEUMONIA and the model with try to classify that image. With our model being 98% precise in its predictions it should get most, if not all of images in this sample test set correct'')
+    st.markdown('Here we can test the model to see how it performs. Please choose from the list of images down below, either NORMAL or PNEUMONIA and the model with try to classify that image. With our model being 98% precise in its predictions it should get most, if not all of images in this sample test set correct')
     fig = plt.figure()
     
 
