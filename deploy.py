@@ -65,7 +65,7 @@ with modeltraining:
 
     path = st.selectbox("Choose File", options=['data/chest_xray/test/PNEUMONIA/person1_virus_11.jpeg', 'data/chest_xray/test/PNEUMONIA/person1_virus_12.jpeg', 'data/chest_xray/test/PNEUMONIA/person1_virus_13.jpeg', 'data/chest_xray/test/PNEUMONIA/person137_bacteria_655.jpeg', 'data/chest_xray/test/PNEUMONIA/person10_virus_35.jpeg', 'data/chest_xray/test/PNEUMONIA/person1_virus_8.jpeg', 'data/chest_xray/test/PNEUMONIA/person1_virus_9.jpeg', 'data/chest_xray/test/NORMAL/IM-0001-0001.jpeg', 'data/chest_xray/test/NORMAL/IM-0081-0001.jpeg', 'data/chest_xray/test/NORMAL/IM-0005-0001.jpeg', 'data/chest_xray/test/NORMAL/IM-0006-0001.jpeg', 'data/chest_xray/test/NORMAL/IM-0070-0001.jpeg', 'data/chest_xray/test/NORMAL/IM-0003-0001.jpeg', 'data/chest_xray/test/NORMAL/IM-0101-0001.jpeg'], index=0)
 
-    img = image.load_img(path, target_size=(256, 256), color_mode="grayscale")
+    img = image.load_img(path, target_size=(256, 256))
     st.image(img, caption='Image Uploaded', use_column_width=True)
     plt.imshow(img)
     plt.axis("off")
