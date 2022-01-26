@@ -49,13 +49,17 @@ with dataset:
     
 with features:
         
-    st.header('Data Preview')
+    st.header('Image EDA')
     st.markdown('A random selection of images from the dataset.')
     first_img = image.load_img('images/data_preview.png')
     st.image(first_img)
     
-    scd_img = image.load_img('images/class_imbalance.png')
-    st.sidebar.image(scd_img)
+    st.markdown('Here we iterate through all the images in our training data to find the mean pixels of a normal x-ray lung and the mean of a lung with pneumonia. We then take the difference to visualize the contrast between the two throughout the entire training dataset with over 5000 images to get our average contrast.')
+    second_img = image.load_img('images/average_difference.png')
+    st.image(second_img)
+    
+    third_img = image.load_img('images/class_imbalance.png')
+    st.sidebar.image(third_img)
 
 with modeltraining:
     st.header('Model Predictor')
